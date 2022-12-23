@@ -22,7 +22,7 @@ data class User(
     var fullname: String,
     var password: String,
 //    @OneToMany
-//    var posts: MutableList<Post> = mutableListOf(),
+ //   var posts: MutableList<Post> = mutableListOf(),
     @CreationTimestamp
     var createdAt: Timestamp?=null,
     @UpdateTimestamp

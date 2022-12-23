@@ -19,7 +19,8 @@ class UserController @Autowired constructor(private val userService: UserService
     fun createUser(@RequestBody user: User): User = userService.saveUser(user)
 
     @PutMapping("/users/{id}")
-    fun updateUser(@PathVariable id: Long,@RequestBody user: User): User = userService.updateUser(id, user)
+    fun updateUser(@PathVariable id: Long,
+                   @RequestBody user: User): User = userService.updateUser(id, user)
 
     @DeleteMapping("/users/{id}")
     fun deleteUser(@PathVariable id: Long): String = userService.deleteUser(id)
